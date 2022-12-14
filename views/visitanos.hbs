@@ -1,0 +1,48 @@
+    <div id="visitanos" class="row py-4 scroll_section">
+                <div class="position-relative">
+                    <h2>VISITANOS</h2>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.093992360931!2d-58.545261484240584!3d-34.44976185687639!2m3!1f0!2
+                    f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcaff1e020409d%3A0x6f309fc7bc525cd!2sEstadio%20Jos%C3%A9%20Della
+                    giovanna!5e0!3m2!1ses-419!2sar!4v1667600010885!5m2!1ses-419!2sar"></iframe>"
+                    </div>
+                </div>
+
+
+
+                <div class="position-relative">
+                    <h2>CONTACTANOS</h2>
+                    <form action="/visitanos" method= "post" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido">
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">email</label>
+                            <input type="email" class="form-control" name="email" placeholder="....@email" id="email">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea type="text" class="form-control" name="mensaje" id="mensaje" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Confirmo los datos
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                    <p> {{message}}</p>
+                </div>
+            </div>
