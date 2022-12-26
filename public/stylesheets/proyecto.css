@@ -1,6 +1,6 @@
 h1 {
   font-family: 'Barlow', sans-serif;
-  color: red;
+  color: rgb(23, 13, 107);
   font-weight: bold;
 }
 
@@ -15,6 +15,13 @@ h2 {
 .navbar-brand{
   font-family: 'Barlow', sans-serif;
   color: white;
+  font-weight: bold;
+}     
+
+.nav-link {
+  color: white;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -62,7 +69,6 @@ body {
   transition: all 0.2s ease-in-out;
   margin-right: 1rem;
   opacity: 0.7;
- 
 }
 
 .lista-novedades li a:hover img {
@@ -84,8 +90,7 @@ body {
 }
 
 .navbar {
-  background-color: #1e448d;
-  
+  background-color: rgb(23, 13, 107);
 }
 
 .imagen {
@@ -105,12 +110,13 @@ body {
 }
 
 .staff {
-  background-color: #1e448d;
+  background-color: rgb(23, 13, 107);
 }
 
 .mapa iframe {
   width: 100%;
   aspect-ratio: 1.2;
+  padding: 100px;
 }
 
 html {
@@ -131,7 +137,6 @@ html {
   display: flex;
   padding: 0;
   width: 400%;
-
   animation: cambio 20s infinite alternate;
 }
 
@@ -190,7 +195,6 @@ html {
  grid-template-columns: auto auto;
  grid-template-rows: auto auto;
  grid-gap: 20px;
- 
 }
 
 .container-img .box-img figure {
@@ -202,8 +206,365 @@ html {
   width: 90%;
   height: 90%;
   object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0,0,0,1);
 }
 
 .novedades {
+  background-color: rgb(23, 13, 107);
+}
+
+a {
+  text-decoration:none;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: rgb(23, 13, 107);
+}
+
+.footer .redes {
+  text-align: center;
+  padding-bottom: 25 px;
+  color: white;
+}
+
+.footer .redes a {
+  font-size: 24px;
+  color: white;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align:center;
+  border-radius: 40%;
+  margin: 5px;
+  opacity: 0.75;
+}
+
+.footer .redes a:hover {
+  opacity: 0.9;
+}
+
+.diseñado {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color:white;
+}
+
+.linea {
+  height: 5px;
+  width: 100%;
+  display: block;
+  background-color: rgb(23, 13, 107);
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap:5px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.galeria > a{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0,0,0,.5);
+  margin: 15px;
+}
+
+
+
+.plantel {
+  font-weight: 700;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 100px;
+}
+
+.nombre-jugador{
+  text-align: center;
+}
+
+.inicio {
+  text-align: center;
+}
+
+.visitanos {
+ 
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 1000;
+  box-sizing: border-box;
+  padding: 250px 0;
+  background-color: white;
+}
+
+.visitanos1{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  font-weight: 00;
+  box-sizing: border-box;
+  width: 90%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: -189px;
+  z-index: 10;
+  background-color: whitesmoke;
+}
+
+.visitanos2{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.visitanos3{
+  font-size: 1rem;
+  line-height: 3.5;
+  color: #0c0d0f;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  font-weight: 1000;
+  box-sizing: border-box;
+  padding-bottom: 45px;
+  display: block;
+  height: 100%;
+  min-height: 700px;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  margin: 1px;
+  background-color: white;
+}
+
+.visitanostitulo{
+  text-align: center;
+  box-sizing: border-box;
+  font-family: inherit;
+  position: relative;
+  margin: 0;
+  padding: 26px 18px 56px;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 45px;
   background-color: #1e448d;
+}
+
+.infovis{
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  padding: 50px 18px 0;
+  color: #003492;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  background-color: white;
+}
+
+.info2{
+  text-align: center;
+  color: black;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  margin-left: 0;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.info3{
+  text-align: center;
+  color: white;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  box-sizing: border-box;
+  margin-left: 0;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 18px;
+  
+}
+
+
+.visitanos4{
+
+  font-size: 1rem;
+  line-height: 3.5;
+  color: white;
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  font-weight: 1000;
+  box-sizing: border-box;
+  padding-bottom: 45px;
+  display: block;
+  height: 100%;
+  min-height: 700px;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  margin: 1px;
+  background-color: #1e448d;
+}
+
+
+.content-box col-12{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 45px;
+  display: block;
+  height: 100%;
+  min-height: 700px;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  margin: 1px;
+  background-color: rgba(255,255,255,.95);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.tit{
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  color: #1c1e36;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+  padding: 36px 18px 36px;
+}
+
+.imagenfondo{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 50;
+  box-sizing: border-box;
+  position: relative;
+  height: 400px;
+}
+
+.imgcancha{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  transition: opacity .5s ease-in-out;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-color: #b3b6c1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -5px;
+  opacity: 1;
+  background-image: url("../images/fondologin3.jpg");
+  opacity: 0.8;
+}
+
+.visitanostit{
+  text-align: left;
+  box-sizing: border-box;
+  font-family: inherit;
+  margin: 12px -300px 0px;
+  font-size: 100px;
+  font-weight: 800px;
+  line-height: 100px;
+  color: #fff;
+  padding: 300px;
+}
+
+.titulo1{
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  color: #1c1e36;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 36px 18px 36px;
+}
+
+.formulario {
+  color: white;
+  text-align: left;
+  font-family: Montserrat,sans-serif;
+  box-sizing: border-box;
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: -189px;
+  opacity: 0.8;
+  background-image: url(../images/cat.jpg);
+  background-position: 30%;
+  background-size: cover;
+  
+}
+
+.tituloformulario {
+  color: white;
+  text-align: left;
+  padding-top: 50px;
 }

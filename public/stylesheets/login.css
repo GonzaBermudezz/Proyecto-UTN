@@ -1,7 +1,13 @@
 .navbar {
-    background-color: #1e448d;
+    background-color: rgb(23, 13, 107);
     
   }
+
+  .navbar-brand{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: bold;
+  } 
 
   body {
     margin: 0;
@@ -15,7 +21,7 @@
   .login-box {
     width: 320px;
     height: 420px;
-    background: black;
+    background:  rgb(23, 13, 107);
     color: #fff;
     top: 50%;
     left: 50%;
@@ -81,4 +87,8 @@
   
   .login-box a:hover {
     color: #fff;
+  }
+
+  .table {
+    background-color: white;
   }
