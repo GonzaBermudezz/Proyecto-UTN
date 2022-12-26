@@ -92,3 +92,30 @@
   .table {
     background-color: white;
   }
+
+.text-end {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container-mod {
+    width: 600px;
+    height: 500px;
+    background:  rgb(23, 13, 107);
+    color: #fff;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}

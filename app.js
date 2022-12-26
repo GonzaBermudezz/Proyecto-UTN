@@ -12,7 +12,6 @@ var visitanosRouter = require("./routes/visitanos");
 var indexRouter = require("./routes/index");
 var plantelRouter = require("./routes/plantel");
 var novedadesRouter = require("./routes/novedades");
-var historiaRouter = require("./routes/historia");
 var loginRouter = require("./routes/admin/login");
 var inicioRouter = require("./routes/inicio");
 var adminRouter = require("./routes/admin/novedades");
@@ -58,7 +57,6 @@ app.use("/visitanos", visitanosRouter);
 app.use("/", indexRouter);
 app.use("/plantel", plantelRouter);
 app.use("/novedades", novedadesRouter);
-app.use("/historia", historiaRouter);
 app.use("/admin/login", loginRouter);
 app.use("/admin/novedades", secured, adminRouter);
 
@@ -78,10 +76,6 @@ app.get("/plantel", function (req, res) {
 
 app.get("/novedades", function (req, res) {
   res.render("novedades");
-});
-
-app.get("/historia", function (req, res) {
-  res.render("historia");
 });
 
 app.get("/", function (req, res) {

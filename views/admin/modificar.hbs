@@ -1,7 +1,7 @@
-<div class="container" style="margin:100px 0">
+<div class="container-mod" style="margin:100px 0">
     <div class="row">
         <div class="col-6 offset-3">
-            <h4>Modificar novedades</h4>
+            <h2>MODIFICAR NOVEDADES</h2>
             <form action="/admin/novedades/modificar" method="post">
                 <input type="hidden" value="{{novedad.id}}" name="id">            
                 <div class="form-group">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <label>Cuerpo</label>
-                    <input class="form-control" name="cuerpo">{{novedad.cuerpo}}
+                    <textarea class="form-control" ¿name="cuerpo">{{novedad.cuerpo}}</textarea>
                 </div>
                  <div class="form-group">
                     <p>
